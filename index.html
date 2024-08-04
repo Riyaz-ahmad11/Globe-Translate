@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Your Text</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <div class="container">
+    <div class="upper">
+     
+     <textarea placeholder="Enter text" class="text-holder text" ></textarea>
+     <textarea placeholder="Translation" class="text-holder translation" ></textarea>
+
+
+      <div class="controls">
+        <i class="fa-solid fa-volume-high speaker speaker1" data-speak="click to speech"></i>
+        <i class="fa-regular fa-copy copy1" data-copy="copy to clipboard"></i>
+        
+        <div class="line"></div>
+
+        <select name="language" class="select1"></select>
+        
+        <i class="fa-solid fa-arrow-right-arrow-left arrow" data-interchange="swap feilds"></i>
+
+        <select name="language"  class="select2"></select>
+
+        <div class="line"></div>
+
+        <i class="fa-regular fa-copy copy2" data-copy="copy to clipboard"></i>
+      
+        <i class="fa-solid fa-volume-high speaker speaker2" data-speak="click to speech"></i>
+        
+      </div>
+
+    </div>
+
+    <button class="translate-btn">Translate Text</button>
+  </div>
+
+
+  <script src="countryLang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
